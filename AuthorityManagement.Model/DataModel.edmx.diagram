@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="42a7cccfef2b4606a1d86cb4236dc613" Name="Diagram1" >
+        <EntityTypeShape EntityType="DataModel.UserInfo" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="DataModel.Role" Width="1.5" PointX="4.5" PointY="4.875" />
+        <EntityTypeShape EntityType="DataModel.ActionInfo" Width="1.5" PointX="7.75" PointY="4.5" />
+        <EntityTypeShape EntityType="DataModel.ActionGroup" Width="1.5" PointX="7.25" PointY="0.5" />
+        <EntityTypeShape EntityType="DataModel.R_UserInfo_Role" Width="1.5" PointX="0.5" PointY="4.75" />
+        <AssociationConnector Association="DataModel.UserInfo_R_UserInfo_Role" />
+        <AssociationConnector Association="DataModel.Role_R_UserInfo_Role" />
+        <EntityTypeShape EntityType="DataModel.R_UserInfo_ActionInfo" Width="1.5" PointX="3.25" PointY="1.125" />
+        <AssociationConnector Association="DataModel.UserInfoR_UserInfo_ActionInfo" />
+        <AssociationConnector Association="DataModel.ActionInfo_R_UserInfo_ActionInfo" />
+        <AssociationConnector Association="DataModel.UserInfo_ActionGroup" />
+        <AssociationConnector Association="DataModel.ActionGroup_ActionInfo" />
+        <AssociationConnector Association="DataModel.Role_ActionGroup" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
