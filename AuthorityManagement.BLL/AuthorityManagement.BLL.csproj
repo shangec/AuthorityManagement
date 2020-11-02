@@ -47,6 +47,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AuthorityManagement.Common\AuthorityManagement.Common.csproj">
+      <Project>{B1B5CE04-025A-4693-B0B2-9CB1ECE26A75}</Project>
+      <Name>AuthorityManagement.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AuthorityManagement.DAL\AuthorityManagement.DAL.csproj">
       <Project>{271e5209-30c0-42a5-a0c1-707ee49dda02}</Project>
       <Name>AuthorityManagement.DAL</Name>

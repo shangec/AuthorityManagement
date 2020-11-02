@@ -47,10 +47,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AuthorityManagement.Common\AuthorityManagement.Common.csproj">
+      <Project>{B1B5CE04-025A-4693-B0B2-9CB1ECE26A75}</Project>
+      <Name>AuthorityManagement.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AuthorityManagement.IDAL\AuthorityManagement.IDAL.csproj">
+      <Project>{6526D263-7178-47F0-9319-745A0DBA6025}</Project>
+      <Name>AuthorityManagement.IDAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AuthorityManagement.Model\AuthorityManagement.Model.csproj">
       <Project>{538433F5-C94D-4C47-8497-0A751ACB29BB}</Project>
       <Name>AuthorityManagement.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

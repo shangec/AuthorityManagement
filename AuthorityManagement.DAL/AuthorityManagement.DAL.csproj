@@ -47,6 +47,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseRepository.cs" />
+    <Compile Include="DbSession.cs" />
+    <Compile Include="DbSessionFactory.cs" />
+    <Compile Include="EFContextFactory.cs" />
+    <Compile Include="Service.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Service.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MyFirst.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyFirst.tt</DependentUpon>
+    </Compile>
     <Compile Include="RepositoryFactory.cs" />
     <Compile Include="RoleRepository.cs" />
     <Compile Include="UserInfoRepository.cs" />
@@ -65,6 +78,19 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Service.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Service.cs</LastGenOutput>
+    </Content>
+    <Content Include="MyFirst.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MyFirst.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -42,7 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IBaseRepository.cs" />
+    <Compile Include="IDbSession.cs" />
     <Compile Include="IRoleRepository.cs" />
+    <Compile Include="IService.cs">
+      <DependentUpon>IService.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="IUserInfoRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -51,6 +57,15 @@
       <Project>{538433F5-C94D-4C47-8497-0A751ACB29BB}</Project>
       <Name>AuthorityManagement.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IService.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IService.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

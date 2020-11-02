@@ -1038,11 +1038,15 @@
     <Content Include="Content\JqueryEasyUI\themes\mobile.css" />
     <Content Include="Content\JqueryEasyUI\themes\react.css" />
     <Content Include="Content\JqueryEasyUI\themes\vue.css" />
+    <Content Include="Content\Login\jquery.min.js" />
+    <Content Include="Content\Login\three.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\UserInfoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1079,6 +1083,8 @@
     <Content Include="Content\JqueryEasyUI\themes\material\images\Thumbs.db" />
     <None Include="packages.config" />
     <Content Include="Views\UserInfo\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1094,6 +1100,10 @@
     <ProjectReference Include="..\AuthorityManagement.BLL\AuthorityManagement.BLL.csproj">
       <Project>{e37294b7-ead6-4e91-8921-5a0ca98893ac}</Project>
       <Name>AuthorityManagement.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AuthorityManagement.Common\AuthorityManagement.Common.csproj">
+      <Project>{B1B5CE04-025A-4693-B0B2-9CB1ECE26A75}</Project>
+      <Name>AuthorityManagement.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\AuthorityManagement.IBLL\AuthorityManagement.IBLL.csproj">
       <Project>{899a69f0-81fb-4e2f-b0a8-af31adf9517b}</Project>
